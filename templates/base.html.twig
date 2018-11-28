@@ -43,7 +43,7 @@
                                 {% if is_granted('ROLE_ADMIN') %}
                                     <a class="dropdown-item" href="{{ path('admin_article_new') }}">Create Post</a>
                                 {% endif %}
-                                <a class="dropdown-item" href="#">{{ path('app_logout') }}</a>
+                                <a class="dropdown-item" href="{{ path('app_logout') }}">logout</a>
                             </div>
                         </li>
                     {% else %}
